@@ -1,0 +1,118 @@
+页面start*/
+div,a {
+	box-sizing: border-box;
+}
+.mine_main {
+	margin-bottom: 5rem;
+}
+.mine_head {
+	width: 100%;
+	background: url(../img/bg.png) no-repeat;
+	height: 16rem;
+	background-size: 100% 16rem;
+	text-align: center;
+	padding-top:  1.6rem;
+	color: #fff;
+	position: relative;
+}
+.mh_pic {
+	width: 5.8rem;
+	height: 5.8rem;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+}
+.mh_pic img {
+	width: 100%;
+	display: inline-block;
+	height: auto;
+}
+.mh_name {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+.mh_other {
+	line-height: 1.6rem;
+	margin-top: 0.6rem;
+	font-size: 1.04rem;
+}
+.mh_card {
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	right: 1.6rem;
+	top: 1.2rem;
+}
+.mh_card span {
+	width: 100%;
+	height: 100%;
+	background: url(../img/card.png) 50% no-repeat;
+	display: block;
+	background-size: 1.72rem 1.28rem;
+}
+.mine_bg {
+	background-color: #FFF;
+	margin-bottom: 0.8rem;
+}
+.mine_list {
+	line-height: 3.52rem;
+	height: 3.52rem;
+	padding: 0 0.96rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+.Rarrow {
+	/* 箭头位置 */
+	background: url(../img/arrow.png) 95% center no-repeat;
+	background-size: 0.56rem 1rem;
+
+}
+.mine_list a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ml_left {
+	height: 100%;
+	display: inline-block;
+	padding-left: 2.5rem;
+	font-size: 1.12rem;
+	color: #333;
+}
+.ml_right {
+	float: right;
+	margin-top: 1.1rem;
+	margin-right: 2.5rem;
+	display: inline-block;
+	font-size: 0.8rem;
+	padding: 0 0.5rem;
+	border-radius: 0.15rem;
+	height: 1rem;
+	line-height: 1.1rem;
+	color: #fff;
+}
+.ml_diamond {
+	/* 左边的图片 */
+	background: url(../img/grade.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+.ml_activity {
+	background: url(../img/activity.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+.ml_recruit {
+	background: url(../img/recruit.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+.ml_answer {
+	background: url(../img/question.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+.ml_resource {
+	background: url(../img/resoureces.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+.ml_phone {
+	background: url(../img/link.png) left center no-repeat;
+	background-size: 1.68rem 1.6rem;
+}
+/*页面end

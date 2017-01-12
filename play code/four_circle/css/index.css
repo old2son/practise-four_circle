@@ -1,0 +1,410 @@
+/*搜索栏Begin*/
+.search{
+    width: 100%;
+    padding: 0.64rem;
+    height: 4.16rem;
+    position: fixed;
+    box-sizing: border-box; /*解决宽度溢出问题*/
+    left: 0; /*防放大屏幕止向右移*/
+    top: 0;
+    background-color: #f0f4f7;
+    z-index: 999;
+}
+.search .search_box {
+    width: 100%;
+    height: 2.88rem;
+    background-color: #FFFFFF;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+}
+.search .search_box .searchBtn {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    vertical-align: middle;
+    background: url("../img/search.png") center no-repeat;
+    background-size: 1.48rem;
+}
+.search .search_box input {
+    width: 88%;
+    font-size: 1.12rem;
+}
+/*搜索栏End*/
+/*发帖页Begin*/
+.main {
+    padding: 4.16rem 0.64rem 5rem;
+    height: auto;
+    box-sizing: border-box;
+}
+.main_nav {
+    box-sizing: border-box;
+    text-align: center;
+}
+.main_nav>div {
+    width: 22%;
+    height: 5.32rem;
+    display: inline-block;
+    margin: 0 0.7%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.main_nav>div a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.main_nav p {
+    font-family: '黑体';
+    font-size: 1.7rem;
+    margin-top: 0.64rem;
+    color: #FFFFFF;
+}
+.answer {
+    background: url("../img/bgB-big.png")  no-repeat;
+    background-size: 100% 100%; /*显示整张图片*/
+}
+.recuit {
+    background: url("../img/bgG-big.png")  no-repeat;
+    background-size: 100% 100%;
+}
+.activity {
+    background: url("../img/bgO-big.png")  no-repeat;
+    background-size: 100% 100%;
+}
+.resource {
+    background: url("../img/bgP-big.png")  no-repeat;
+    background-size: 100% 100%;
+}
+.main_nav div span {
+    display: block;
+    width: 100%;
+    height: 2.54rem;
+    margin-top: 0.6rem;
+    background-size: 2.06rem 2.56rem; /*重新设置图片大小*/
+}
+.answer span {
+    background: url("../img/answer.png") center no-repeat;
+}
+.recuit span {
+    background: url("../img/recruitW.png") center no-repeat;
+}
+.activity span {
+    background: url("../img/activityW.png") center no-repeat;
+}
+.resource span {
+    background: url("../img/resourcesW.png") center no-repeat;
+}
+
+.main .main_post {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 0.95rem;
+    padding: 1rem 0.64rem;
+    border-radius: 0.4rem;
+    border-bottom: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    position: relative;
+}
+.main .main_post a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.post_who {
+    position: relative;
+}
+.post_who_pic {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    overflow: hidden; /*隐藏超出盒子的部分*/
+}
+.post_who_pic img {
+    width: 100%;
+}
+.post_who_name {
+    margin-left: 0.6rem;
+}
+.post_who_name p {
+    font-size: 1.12rem;
+    font-family: '黑体';
+    color: #3e3e3e;
+    margin-top: 0.2rem;
+}
+.post_who_name .post_who_name_time {
+    display: block;
+    font-size:0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+.post_who_grade .post_who_grade_color {
+    margin: 0.2rem 0 0 0.8rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    height: 1rem;
+    line-height: 1.1rem;
+    background: #9d7bd6;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+}
+.post_who_follow {
+    position: absolute;
+    right: 0.4rem;
+    top: 0;
+    box-sizing: border-box;
+}
+.post_who_follow .post_who_follow_Btn {
+    background-color: #66a4f9;
+    display: block;
+    width: 4.8rem;
+    height: 2.4rem;
+    line-height: 2.6rem;
+    color: #fff;
+    font-size: 1.04rem;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+.post_question {
+    padding: 0.4rem 0;
+    box-sizing: border-box;
+}
+.post_question p {
+    margin-top: 0.4rem;
+    color: #888;
+    font-size: 0.96rem;
+    line-height: 1.5rem;
+    font-family: "Microsoft YaHei";
+}
+.post_answer {
+    font-size: 0.96rem;
+    color: #a0a7b9;
+    line-height: 1.5rem;
+    font-family: "Microsoft YaHei";
+    box-sizing: border-box;
+}
+.post_newAnswer {
+    position: relative;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+}
+.post_newAnswer_triangle {
+    position: absolute;
+    display: block;
+    background: url(../img/sanjiao.png) center no-repeat;
+    width: 0.88rem;
+    height: 0.4rem;
+    top: -0.35rem;
+    left: 1rem;
+    background-size: 0.8rem 0.32rem; /*固定三角形的形状,防止拉伸变形*/
+}
+.post_newAnswer_pic {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.post_newAnswer_pic img {
+    width: 100%;
+}
+.post_newAnswer_right {
+    width: 85%;
+}
+.post_newAnswer_name  p {
+    font-size: 0.96rem;
+    color: #3e3e3e;
+}
+.post_newAnswer_content p {
+    font-size: 0.96rem;
+    color: #888;
+    line-height: 1.5rem;
+    margin-top: 0.4rem;
+}
+.post_pic {
+    background: url('../img/AG.png') 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2.96rem;
+    height: 2.32rem;
+    background-size: 2.96rem 2.32rem;
+    box-sizing: border-box;
+}
+.post_who_info_box {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+.post_who_info_box li {
+    width: 50%;
+    float: left;
+    font-size: 1.04rem;
+    color: #888;
+    line-height: 1.5rem;
+}
+.didian {
+    width: 40%;
+    float: left; /*设置浮动拥有自己的宽高*/
+}
+.gongsi {
+    width: 32%;
+    float: left;
+}
+.pic2 {
+    background: url(../img/ZY.png) 0 0 no-repeat;
+    background-size: 2.96rem 2.32rem;
+}
+.pic3 {
+    background: url(../img/ZB.png) 0 0 no-repeat;
+    background-size: 2.96rem 2.32rem;
+}
+.pic4 {
+    background: url(../img/HG.png) 0 0 no-repeat;
+    background-size: 2.96rem 2.32rem;
+}
+.post_who_list {
+    margin-top: 0.8rem;
+}
+.post_who_list_content {
+    font-size: 1.04rem;
+    color: #888;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+.post_who_list_content span {
+    float: left;
+    line-height: 1.5rem;
+}
+.post_who_list_content span:first-of-type {
+    width: 26%;
+}
+.post_who_list_content span:last-of-type {
+    width: 74%;
+}
+.post_who_list_yibao {
+    color: #a0a7b9;
+    font-size: 0.96rem;
+    margin-top: 0.8rem;
+}
+/*发帖页End*/
+/*链接Begin*/
+.postLink {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.5;
+    bottom: 5rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    width: 4.32rem;
+    height: 4.32rem;
+}
+.postLink a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.postLink span{
+    background: url(../img/post.png) center no-repeat;
+    display: block;
+    width: 4.32rem;
+    height: 4.32rem;
+    background-size: 1.82rem 1.82rem;
+}
+/*链接End*/
+/*底部按钮Begin*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 3.92rem;
+    background-color: #f1f1f1;
+    box-shadow: 0 -0.16rem 0.24rem rgba(77,77,77,.2);
+}
+.footer_box {
+    width: 25%;
+    height: 3.92rem;
+    font-size: 0.8rem;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+.footer_box a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.footer_box_icon {
+    width: 100%;
+    height: 2.3rem;
+    display: block;
+    padding: 0.56rem;
+    box-sizing: border-box;
+}
+.footer_box .home {
+    background: url("../img/home.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+}
+.footer_box .circle {
+    background: url("../img/circle.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+}
+.footer_box .friends {
+    background: url("../img/friend.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+}
+.footer_box .mine {
+    background: url("../img/mine.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+}
+.footer_box_icon + p {
+    color: #808080;
+    margin-top: 0.4rem;
+}
+.footer_box_on .home {
+    background: url("../img/homeOn.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+} 
+.footer_box_on .circle {
+    background: url("../img/circleOn.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+} 
+.footer_box_on .friends {
+    background: url("../img/friendOn.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+} 
+.footer_box_on .mine {
+    background: url("../img/mineOn.png") 50% 0.6rem no-repeat;
+    background-size: 1.64rem 1.6rem;
+} 
+.footer_box_on p {
+    color: #66a4f9
+}
+/*底部按钮End*/
+/*弹出关注提醒Begin*/
+.followBox {
+    position: fixed;
+    top: 44%;
+    left: 45%;
+    box-sizing: border-box;
+    padding: 0.8rem 1.3rem;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    border-radius: 2rem;
+    z-index: 1000;
+    display: none;
+}
+.followBox p {
+    color: #fff;
+    font-size: 1.28rem;
+    letter-spacing: 0.2rem;
+}
+/*弹出关注提醒End*/

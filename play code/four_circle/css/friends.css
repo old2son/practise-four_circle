@@ -1,0 +1,91 @@
+/*页面start*/
+div,a {
+	box-sizing: border-box;
+}
+.friends_main {
+	margin-bottom: 5rem;
+}
+.NewFriends_list {
+	width: 100%;
+	height: 4.32rem;
+	background-color: #fff;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 0 0.96rem;
+	line-height: 4.32rem;
+}
+.NewFriends_list a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.NewFriends_list span {
+	font-size: 1.28rem;
+	color: #3F3F3F;
+	margin-right: 0.8rem;
+	vertical-align: middle;
+}
+.nf_icon {
+	width: 3.2rem;
+	height: 3.2rem;
+	display: inline-block;
+	border-radius: 50%;
+	background: #653afa url(../img/Newfriend.png) 50% no-repeat; /*透明图片 + 颜色*/
+	background-size: 1.64rem 1.6rem;
+}
+.friends_list {
+	width: 100%;
+	height: 5.2rem;
+	background-color: #fff;
+}
+.friends_list>.fl {
+	width: 18%;
+	height: 5.2rem;
+	padding-left: 0.96rem;
+}
+.friends_list>.fr {
+	width: 82%;
+	height: 5.2rem;
+	border-bottom: 1px solid #dfdfdf;
+	display: inline-block;
+	padding: 0.8rem 0 0.8rem 0.8rem;
+}
+.friends_list>.fr>div {
+	line-height: 1.7rem;
+}
+.friends_list_Img {
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+.friends_list_Img img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.friends_name {
+	font-size: 1.28rem;
+	color: #3f3f3f;
+	display: inline-block;
+	vertical-align: middle;
+}
+.friends_grade {
+	height: 1rem;
+	display: inline-block;
+	font-size: 0.8rem;
+	color: #fff;
+	padding: 0 0.5rem;
+	border-radius: 0.15rem;
+	margin-left: 0.8rem;
+	vertical-align: middle;
+	line-height: 1rem;
+}
+.friends_num {
+	font-size: 1.12rem;
+	color: #888;
+}
+/*页面end*/

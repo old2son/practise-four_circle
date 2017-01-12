@@ -1,0 +1,81 @@
+/*页面start*/
+div,a,h2 {
+	box-sizing: border-box;
+}
+.circle_main {
+	margin-bottom: 5rem;
+}
+.circle_head {
+	width: 100%;
+	height: 2.8rem;
+	background-color: #fff;
+	padding: 0.64rem 0.64rem 0;
+}
+.circle_head h2 {
+	font-size: 1.04rem;
+	color: #333;
+	line-height: 1.4rem;
+	border-left: 0.2rem solid #66a4f9;
+	padding-left: 0.4rem;
+}
+.ch2 {
+	margin-top: 1.52rem;
+}
+.ch2 h2{
+	border-left-color: #fe434c;
+}
+.circle_content {
+	padding: 0 0.64rem;
+}
+.main_post {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 0.95rem;
+    padding: 1rem 0.64rem;
+    border-radius: 0.4rem;
+    border-bottom: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    position: relative;
+}
+.main_post a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.circle_pic {
+    width: 3.52rem;
+    height: 3.52rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.circle_pic img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.circle_city {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.28rem;
+	color: #333;
+	margin-left: 0.8rem;
+}
+.circle_btn {
+	position: absolute;
+	right: 1.04rem;
+	top: 50%;
+}
+.circle_btn input {
+	background-color: #66a4f9;
+	width: 4.8rem;
+	height: 2.4rem;
+	line-height: 2.6rem;
+	font-size: 1.04rem;
+	border-radius: 0.4rem;
+	color: #fff;
+	margin-top: -1.2rem;
+}
+/*页面end*/
