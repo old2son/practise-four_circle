@@ -12,6 +12,7 @@ window.onload = function(){
 	var indexTopPage = new indexTop('indexTopSide');
 	indexTopPage.dianji(); // 点击搜索栏改变定位
 	followBtn.dianji(); // 点击改变关注按钮
+	
 }
 function indexTop(id) {
 	// 获取搜索栏的元素

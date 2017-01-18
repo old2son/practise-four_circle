@@ -23,6 +23,7 @@ div,a,h2 {
 }
 .ch2 h2{
 	border-left-color: #fe434c;
+	position: relative;
 }
 .circle_content {
 	padding: 0 0.64rem;
@@ -77,5 +78,51 @@ div,a,h2 {
 	border-radius: 0.4rem;
 	color: #fff;
 	margin-top: -1.2rem;
+}
+.circle_city p {
+	margin-bottom: 0.4rem;
+}
+.circle_city_news {
+	background: url(../img/news.png) center no-repeat;
+	background-size: 3.5rem 2rem;
+	width: 3.4rem;
+	height: 2.1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.6rem;
+	font-size: 0.8rem;
+	display: inline-block;
+	position: absolute;
+	left: 9.2rem;
+	top: 0.3rem;
+	vertical-align: middle;
+}
+.circle_city_words {
+	font-size: 0.8rem;
+	color: #888;
+	display: block;
+}
+.circle_head>h2>span {
+	font-size: 0.96rem;
+	color: #888;
+	margin-left: 0.4rem;
+}
+.Down_Arrow {
+	width: 0.8rem;
+	height: 0.8rem;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	right: 0.96rem;
+	border-left: 1px solid #888;
+	border-bottom: 1px solid #888;
+	transform: rotate(-45deg);
+	margin-top: -0.4rem;
+	cursor: pointer;
+}
+.circle_prompt {
+	font-size: 0.96rem;
+	color: #555;
+	margin-top: 0.6rem	;
 }
 /*页面end*/

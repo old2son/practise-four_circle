@@ -134,3 +134,9 @@ s, i, em {
 .bs {
     box-sizing: border-box;
 }
+.db {
+    display: block;
+}
+.dn {
+    display: none;
+}
