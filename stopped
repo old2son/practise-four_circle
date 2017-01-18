@@ -1,0 +1,558 @@
+[1mdiff --git a/play code/four_circle/NewFriends.html b/play code/four_circle/NewFriends.html[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/play code/four_circle/card.html b/play code/four_circle/card.html[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/play code/four_circle/circle.html b/play code/four_circle/circle.html[m
+[1mdeleted file mode 100644[m
+[1mindex cc4ba72..0000000[m
+[1m--- a/play code/four_circle/circle.html[m	
+[1m+++ /dev/null[m
+[36m@@ -1,129 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang='en'>[m
+[31m-<meta charset="utf-8">[m
+[31m-<head>[m
+[31m-	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"[m
+[31m-	name="viewport">[m
+[31m-	<title>圈子</title>[m
+[31m-	<link rel="stylesheet" type="text/css" href="css/base.css">[m
+[31m-	<link rel="stylesheet" type="text/css" href="css/index.css">[m
+[31m-	<link rel="stylesheet" type="text/css" href="css/circle.css">[m
+[31m-</head>[m
+[31m-<body>[m
+[31m-	<!-- 页面start -->[m
+[31m-	<div class="circle_main">[m
+[31m-		<div class="circle_head">[m
+[31m-			<h2>已加入的圈子</h2>[m
+[31m-		</div>[m
+[31m-		<div class="circle_content">[m
+[31m-			<div class="main_post">[m
+[31m-				<a href="">[m
+[31m-					<div class="circle_pic">[m
+[31m-						<img src="img/cc.png">[m
+[31m-					</div>[m
+[31m-					<div class="circle_city">[m
+[31m-						<p>广州圈</p>[m
+[31m-					</div>[m
+[31m-				</a>[m
+[31m-			</div>[m
+[31m-			<div class="main_post">[m
+[31m-				<a href="">[m
+[31m-					<div class="circle_pic">[m
+[31m-						<img src="img/cc.png">[m
+[31m-					</div>[m
+[31m-					<div class="circle_city">[m
+[31m-						<p>广州圈</p>[m
+[31m-					</div>[m
+[31m-				</a>[m
+[31m-			</div>[m
+[31m-			<div class="main_post">[m
+[31m-				<a href="">[m
+[31m-					<div class="circle_pic">[m
+[31m-						<img src="img/cc.png">[m
+[31m-					</div>[m
+[31m-					<div class="circle_city">[m
+[31m-						<p>广州圈</p>[m
+[31m-					</div>[m
+[31m-				</a>[m
+[31m-			</div>[m
+[31m-		</div>[m
+[31m-		<div class="circle_head ch2">[m
+[31m-			<h2>为你推荐的圈子</h2>[m
+[31m-		</div>[m
+[31m-		<div class="circle_content">[m
+[31m-			<div class="main_post">[m
+[31m-				<div class="circle_pic">[m
+[31m-					<img src="img/cc.png">[m
+[31m-				</div>[m
+[31m-				<div class="circle_city">[m
+[31m-					<p>朋友圈</p>[m
+[31m-				</div>[m
+[31m-				<div class="circle_btn">[m
+[31m-					<input type="submit" name="" value="加入">[m
+[31m-				</div>[m
+[31m-			</div>[m
+[31m-			<div class="main_post">[m
+[31m-				<div class="circle_pic">[m
+[31m-					<img src="img/cc.png">[m
+[31m-				</div>[m
+[31m-				<div class="circle_city">[m
+[31m-					<p>朋友圈</p>[m
+[31m-				</div>[m
+[31m-				<div class="circle_btn">[m
+[31m-					<input type="submit" name="" value="加入">[m
+[31m-				</div>[m
+[31m-			</div>[m
+[31m-			<div class="main_post">[m
+[31m-				<div class="circle_pic">[m
+[31m-					<img src="img/cc.png">[m
+[31m-				</div>[m
+[31m-				<div class="circle_city">[m
+[31m-					<p>朋友圈</p>[m
+[31m-				</div>[m
+[31m-				<div class="circle_btn">[m
+[31m-					<input type="submit" name="" value="加入">[m
+[31m-				</div>[m
+[31m-			</div>[m
+[31m-		</div>[m
+[31m-	</div>[m
+[31m-	<!-- 页面end -->[m
+[31m-	<!-- 链接Begin -->[m
+[31m-	<div class="postLink bs">[m
+[31m-		<a href="post.html">[m
+[31m-			<span></span>[m
+[31m-		</a>[m
+[31m-	</div>[m
+[31m-	<!-- 链接End -->[m
+[31m-	<!-- 底部按钮Begin -->[m
+[31m-	<footer class="bs" id='bottomBtnBox'>[m
+[31m-		<div class="footer_box">[m
+[31m-			<a href="index.html">[m
+[31m-				<span class="footer_box_icon home"></span>[m
+[31m-				<p>主页</p>[m
+[31m-			</a>[m
+[31m-		</div>[m
+[31m-		<div class="footer_box footer_box_on">[m
+[31m-			<a href="circle.html">[m
+[31m-				<span class="footer_box_icon circle"></span>[m
+[31m-				<p>圈子</p>[m
+[31m-			</a>[m
+[31m-		</div>[m
+[31m-		<div class="footer_box">[m
+[31m-			<a href="friends.html">[m
+[31m-				<span class="footer_box_icon friends"></span>[m
+[31m-				<p>好友</p>[m
+[31m-			</a>[m
+[31m-		</div>[m
+[31m-		<div class="footer_box">[m
+[31m-			<a href="mine.html">[m
+[31m-				<span class="footer_box_icon mine"></span>[m
+[31m-				<p>我的</p>[m
+[31m-			</a>[m
+[31m-		</div>[m
+[31m-	</footer>[m
+[31m-	<!-- 底部按钮End -->[m
+[31m-</body>[m
+[31m-<script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>[m
+[31m-<script type="text/javascript" src='js/all.js'></script>[m
+[31m-<script type="text/javascript" src='js/common.js'></script>[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/play code/four_circle/css/base.css b/play code/four_circle/css/base.css[m
+[1mdeleted file mode 100644[m
+[1mindex ba1f2ae..0000000[m
+[1m--- a/play code/four_circle/css/base.css[m	
+[1m+++ /dev/null[m
+[36m@@ -1,136 +0,0 @@[m
+[31m-@charset "UTF-8";[m
+[31m-/*css 初始化 */[m
+[31m-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {[m
+[31m-    margin: 0;[m
+[31m-    padding: 0;[m
+[31m-}[m
+[31m-[m
+[31m-html {[m
+[31m-    font-size: 12px;[m
+[31m-}[m
+[31m-@media screen and (min-width: 630px) and (max-width: 699px) {[m
+[31m-    html {[m
+[31m-        font-size: 17px;[m
+[31m-    }[m
+[31m-}[m
+[31m-@media screen and (min-width: 700px) {[m
+[31m-    html {[m
+[31m-        font-size: 20px;[m
+[31m-    }[m
+[31m-}[m
+[31m-@media screen and (min-width: 800px) {[m
+[31m-  html {[m
+[31m-    font-size: 25px; } }[m
+[31m-body {[m
+[31m-    background-color: #f0f4f7;[m
+[31m-    height: 100%;[m
+[31m-    max-width: 640px;[m
+[31m-    min-width: 320px;[m
+[31m-    margin: 0 auto;[m
+[31m-    font: 12px/150% 'Microsoft YaHei',Arial, Verdana, "\5b8b\4f53"; /*宋体，Unicode，统一码*/[m
+[31m-    color: #666;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/[m
+[31m-    border: none;[m
+[31m-    padding: 0;[m
+[31m-    margin: 0;[m
+[31m-    outline-style: none;[m
+[31m-}[m
+[31m-[m
+[31m-ul, ol {[m
+[31m-    list-style: none;				/*清除列表风格*/[m
+[31m-}[m
+[31m-[m
+[31m-input {[m
+[31m-    padding-top: 0;[m
+[31m-    padding-bottom: 0;[m
+[31m-    font-family: "SimSun", "宋体";[m
+[31m-}[m
+[31m-[m
+[31m-select, input {[m
+[31m-    vertical-align: middle;[m
+[31m-}[m
+[31m-[m
+[31m-select, input, textarea {[m
+[31m-    font-size: 12px;[m
+[31m-    margin: 0;[m
+[31m-}[m
+[31m-[m
+[31m-textarea {[m
+[31m-    resize: none;[m
+[31m-}[m
+[31m-[m
+[31m-/*防止多行文本框拖动*/[m
+[31m-img {[m
+[31m-    border: 0;[m
+[31m-    vertical-align: middle;[m
+[31m-}[m
+[31m-[m
+[31m-/*  去掉图片低测默认的3像素空白缝隙*/[m
+[31m-table {[m
+[31m-    border-collapse: collapse;			/*合并外边线*/[m
+[31m-}[m
+[31m-[m
+[31m-.clearfix:before, .clearfix:after {[m
+[31m-    content: "";[m
+[31m-    display: table;[m
+[31m-}[m
+[31m-[m
+[31m-.clearfix:after {[m
+[31m-    clear: both;[m
+[31m-}[m
+[31m-[m
+[31m-.clearfix {[m
+[31m-    *zoom: 1; /*IE/7/6*/[m
+[31m-}[m
+[31m-[m
+[31m-a {[m
+[31m-    color: #666;[m
+[31m-    text-decoration: none;[m
+[31m-}[m
+[31m-[m
+[31m-a:hover {[m
+[31m-    /*color: #C81623;*/[m
+[31m-}[m
+[31m-[m
+[31m-h1, h2, h3, h4, h5, h6 {[m
+[31m-    text-decoration: none;[m
+[31m-    font-weight: normal;[m
+[31m-    font-size: 100%;[m
+[31m-}[m
+[31m-[m
+[31m-s, i, em {				[m
+[31m-    font-style: normal;[m
+[31m-    text-decoration: none;[m
+[31m-}[m
+[31m-[m
+[31m-/*公共类*/[m
+[31m-.col-red {[m
+[31m-    color: #C81623 !important;[m
+[31m-}[m
+[31m-.bg-col-skyblue {[m
+[31m-    background-color: #8ebfef !important;[m
+[31m-}[m
+[31m-.bg-col-sea {[m
+[31m-    background-color: navy !important;[m
+[31m-}[m
+[31m-.bg-col-lilac {[m
+[31m-    background-color: #9d7bd6 !important;[m
+[31m-}[m
+[31m-.bg-col-purple {[m
+[31m-    background-color: #797ddc !important;[m
+[31m-}[m
+[31m-.bg-col-crimson {[m
+[31m-    background-color: crimson !important;[m
+[31m-}[m
+[31m-.fl {[m
+[31m-    float: left;[m
+[31m-}[m
+[31m-.fr {[m
+[31m-    float: right;[m
+[31m-}[m
+[31m-.bs {[m
+[31m-    box-sizing: border-box;[m
+[31m-}[m
+[1mdiff --git a/play code/four_circle/css/circle.css b/play code/four_circle/css/circle.css[m
+[1mdeleted file mode 100644[m
+[1mindex 1482f93..0000000[m
+[1m--- a/play code/four_circle/css/circle.css[m	
+[1m+++ /dev/null[m
+[36m@@ -1,81 +0,0 @@[m
+[31m-/*页面start*/[m
+[31m-div,a,h2 {[m
+[31m-	box-sizing: border-box;[m
+[31m-}[m
+[31m-.circle_main {[m
+[31m-	margin-bottom: 5rem;[m
+[31m-}[m
+[31m-.circle_head {[m
+[31m-	width: 100%;[m
+[31m-	height: 2.8rem;[m
+[31m-	background-color: #fff;[m
+[31m-	padding: 0.64rem 0.64rem 0;[m
+[31m-}[m
+[31m-.circle_head h2 {[m
+[31m-	font-size: 1.04rem;[m
+[31m-	color: #333;[m
+[31m-	line-height: 1.4rem;[m
+[31m-	border-left: 0.2rem solid #66a4f9;[m
+[31m-	padding-left: 0.4rem;[m
+[31m-}[m
+[31m-.ch2 {[m
+[31m-	margin-top: 1.52rem;[m
+[31m-}[m
+[31m-.ch2 h2{[m
+[31m-	border-left-color: #fe434c;[m
+[31m-}[m
+[31m-.circle_content {[m
+[31m-	padding: 0 0.64rem;[m
+[31m-}[m
+[31m-.main_post {[m
+[31m-    width: 100%;[m
+[31m-    height: auto;[m
+[31m-    background-color: white;[m
+[31m-    margin-top: 0.95rem;[m
+[31m-    padding: 1rem 0.64rem;[m
+[31m-    border-radius: 0.4rem;[m
+[31m-    border-bottom: 1px solid #d1d1d1;[m
+[31m-    box-sizing: border-box;[m
+[31m-    position: relative;[m
+[31m-}[m
+[31m-.main_post a {[m
+[31m-    width: 100%;[m
+[31m-    height: 100%;[m
+[31m-    display: block;[m
+[31m-}[m
+[31m-.circle_pic {[m
+[31m-    width: 3.52rem;[m
+[31m-    height: 3.52rem;[m
+[31m-    border-radius: 50%;[m
+[31m-    overflow: hidden;[m
+[31m-    display: inline-block;[m
+[31m-    vertical-align: middle;[m
+[31m-}[m
+[31m-.circle_pic img {[m
+[31m-    width: 100%;[m
+[31m-    height: auto;[m
+[31m-    display: inline-block;[m
+[31m-}[m
+[31m-.circle_city {[m
+[31m-	display: inline-block;[m
+[31m-	vertical-align: middle;[m
+[31m-	font-size: 1.28rem;[m
+[31m-	color: #333;[m
+[31m-	margin-left: 0.8rem;[m
+[31m-}[m
+[31m-.circle_btn {[m
+[31m-	position: absolute;[m
+[31m-	right: 1.04rem;[m
+[31m-	top: 50%;[m
+[31m-}[m
+[31m-.circle_btn input {[m
+[31m-	background-color: #66a4f9;[m
+[31m-	width: 4.8rem;[m
+[31m-	height: 2.4rem;[m
+[31m-	line-height: 2.6rem;[m
+[31m-	font-size: 1.04rem;[m
+[31m-	border-radius: 0.4rem;[m
+[31m-	color: #fff;[m
+[31m-	margin-top: -1.2rem;[m
+[31m-}[m
+[31m-/*页面end*/[m
+\ No newline at end of file[m
+[1mdiff --git a/play code/four_circle/css/friends.css b/play code/four_circle/css/friends.css[m
+[1mdeleted file mode 100644[m
+[1mindex 35e58c8..0000000[m
+[1m--- a/play code/four_circle/css/friends.css[m	
+[1m+++ /dev/null[m
+[36m@@ -1,91 +0,0 @@[m
+[31m-/*页面start*/[m
+[31m-div,a {[m
+[31m-	box-sizing: border-box;[m
+[31m-}[m
+[31m-.friends_main {[m
+[31m-	margin-bottom: 5rem;[m
+[31m-}[m
+[31m-.NewFriends_list {[m
+[31m-	width: 100%;[m
+[31m-	height: 4.32rem;[m
+[31m-	background-color: #fff;[m
+[31m-	border-bottom: 1px solid #dfdfdf;[m
+[31m-	padding: 0 0.96rem;[m
+[31m-	line-height: 4.32rem;[m
+[31m-}[m
+[31m-.NewFriends_list a {[m
+[31m-	display: block;[m
+[31m-	width: 100%;[m
+[31m-	height: 100%;[m
+[31m-}[m
+[31m-.NewFriends_list span {[m
+[31m-	font-size: 1.28rem;[m
+[31m-	color: #3F3F3F;[m
+[31m-	margin-right: 0.8rem;[m
+[31m-	vertical-align: middle;[m
+[31m-}[m
+[31m-.nf_icon {[m
+[31m-	width: 3.2rem;[m
+[31m-	height: 3.2rem;[m
+[31m-	display: inline-block;[m
+[31m-	border-radius: 50%;[m
+[31m-	background: #653afa url(../img/Newfriend.png) 50% no-repeat; /*透明图片 + 颜色*/[m
+[31m-	background-size: 1.64rem 1.6rem;[m
+[31m-}[m
+[31m-.friends_list {[m
+[31m-	width: 100%;[m
+[31m-	height: 5.2rem;[m
+[31m-	background-color: #fff;[m
+[31m-}[m
+[31m-.friends_list>.fl {[m
+[31m-	width: 18%;[m
+[31m-	height: 5.2rem;[m
+[31m-	padding-left: 0.96rem;[m
+[31m-}[m
+[31m-.friends_list>.fr {[m
+[31m-	width: 82%;[m
+[31m-	height: 5.2rem;[m
+[31m-	border-bottom: 1px solid #dfdfdf;[m
+[31m-	display: inline-block;[m
+[31m-	padding: 0.8rem 0 0.8rem 0.8rem;[m
+[31m-}[m
+[31m-.friends_list>.fr>div {[m
+[31m-	line-height: 1.7rem;[m
+[31m-}[m
+[31m-.friends_list_Img {[m
+[31m-	width: 3.2rem;[m
+[31m-	height: 3.2rem;[m
+[31m-	border-radius: 50%;[m
+[31m-	overflow: hidden;[m
+[31m-	margin-top: 1rem;[m
+[31m-	display: inline-block;[m
+[31m-	vertical-align: middle;[m
+[31m-}[m
+[31m-.friends_list_Img img {[m
+[31m-	width: 100%;[m
+[31m-	height: auto;[m
+[31m-	display: inline-block;[m
+[31m-	vertical-align: middle;[m
+[31m-}[m
+[31m-.friends_name {[m
+[31m-	font-size: 1.28rem;[m
+[31m-	color: #3f3f3f;[m
+[31m-	display: inline-block;[m
+[31m-	vertical-align: middle;[m
+[31m-}[m
+[31m-.friends_grade {[m
+[31m-	height: 1rem;[m
+[31m-	display: inline-block;[m
+[31m-	font-size: 0.8rem;[m
+[31m-	color: #fff;[m
+[31m-	padding: 0 0.5rem;[m
+[31m-	border-radius: 0.15rem;[m
+[31m-	margin-left: 0.8rem;[m
+[31m-	vertical-align: middle;[m
+[31m-	line-height: 1rem;[m
+[31m-}[m
+[31m-.friends_num {[m
+[31m-	font-size: 1.12rem;[m
+[31m-	color: #888;[m
+[31m-}[m
+[31m-/*页面end*/[m
+\ No newline at end of file[m
+[1mdiff --git a/play code/four_circle/css/index.css b/play code/four_circle/css/index.css[m
+[1mdeleted file mode 100644[m
+[1mindex e12aa47..0000000[m
+[1m--- a/play code/four_circle/css/index.css[m	
+[1m+++ /dev/null[m
+[36m@@ -1,410 +0,0 @@[m
+[31m-/*搜索栏Begin*/[m
+[31m-.search{[m
+[31m-    width: 100%;[m
+[31m-    padding: 0.64rem;[m
+[31m-    height: 4.16rem;[m
+[31m-    position: fixed;[m
+[31m-    box-sizing: border-box; /*解决宽度溢出问题*/[m
+[31m-    left: 0; /*防放大屏幕止向右移*/[m
+[31m-    top: 0;[m
+[31m-    background-color: #f0f4f7;[m
+[31m-    z-index: 999;[m
+[31m-}[m
+[31m-.search .search_box {[m
+[31m-    width: 100%;[m
+[31m-    height: 2.88rem;[m
+[31m-    background-color: #FFFFFF;[m
+[31m-    border-radius: 0.4rem;[m
+[31m-    box-sizing: border-box;[m
+[31m-}[m
+[31m-.search .search_box .searchBtn {[m
+[31m-    display: inline-block;[m
+[31m-    width: 10%;[m
+[31m-    height: 100%;[m
+[31m-    vertical-align: middle;[m
+[31m-    background: url("../img/search.png") center no-repeat;[m
+[31m-    background-size: 1.48rem;[m
+[31m-}[m
+[31m-.search .search_box input {[m
+[31m-    width: 88%;[m
+[31m-    font-size: 1.12rem;[m
+[31m-}[m
+[31m-/*搜索栏End*/[m
+[31m-/*发帖页Begin*/[m
+[31m-.main {[m
+[31m-    padding: 4.16rem 0.64rem 5rem;[m
+[31m-    height: auto;[m
+[31m-    box-sizing: border-box;[m
+[31m-}[m
+[31m-.main_nav {[m
+[31m-    box-sizing: border-box;[m
+[31m-    text-align: center;[m
+[31m-}[m
+[31m-.main_nav>div {[m
+[31m-    width: 22%;[m
+[31m-    height: 5.32rem;[m
+[31m-    display: inline-block;[m
+[31m-    margin: 0 0.7%;[m
+[31m-    vertical-align: middle;[m
+[31m-    box-sizing: border-box;[m
+[31m-}[m
+[31m-.main_nav>div a {[m
+[31m-    display: inline-block;[m
+[31m-    width: 100%;[m
+[31m-    height: 100%;[m
+[31m-    box-sizing: border-box;[m
+[31m-}[m
+[31m-.main_nav p {[m
+[31m-    font-family: '黑体';[m
+[31m-    font-size: 1.7rem;[m
+[31m-    margin-top: 0.64rem;[m
+[31m-    color: #FFFFFF;[m
+[31m-}[m
+[31m-.answer {[m
+[31m-    background: url("../img/bgB-big.png")  no-repeat;[m
+[31m-    background-size: 100% 100%; /*显示整张图片*/[m
+[31m-}[m
+[31m-.recuit {[m
+[31m-    background: url("../img/bgG-big.png")  no-repeat;[m
+[31m-    background-size: 100% 100%;[m
+[31m-}[m
+[31m-.activity {[m
+[31m-    background: url("../img/bgO-big.png")  no-repeat;[m
+[31m-    background-size: 100% 100%;[m
+[31m-}[m
+[31m-.resource {[m
+[31m-    background: url("../img/bgP-big.png")  no-repeat;[m
+[31m-    background-size: 100% 100%;[m
+[31m-}[m
+[31m-.main_nav div span {[m
+[31m-    display: block;[m
+[31m-    width: 100%;[m
+[31m-    height: 2.54rem;[
