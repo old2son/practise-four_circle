@@ -43,6 +43,10 @@ ul, ol {
     list-style: none;				/*清除列表风格*/
 }
 
+div,a,h2 {
+    box-sizing: border-box;
+}
+
 input {
     padding-top: 0;
     padding-bottom: 0;

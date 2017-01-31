@@ -16,7 +16,6 @@ circle2.prototype = {
 		// 保存this
 		var that = this;
 		// 遍历按钮
-		var index;
 		for(var i=0;i<this.dArrow.length;i++){
 			// 自定义属性保存 值
 				this.dArrow[i].index = i
