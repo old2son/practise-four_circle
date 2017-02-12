@@ -46,7 +46,7 @@ header .title {
 	height: auto;
 	border-radius: 0.4rem;
 	background-color: #fff;
-	box-shadow: 0 0 0.1rem rgba(77,77,77,.5);
+	box-shadow: 0 0.2rem 0 rgba(77,77,77,.5);
 }
 .cTMCBg_head{padding: 1.44rem;border-bottom:1px solid #eee;}
 .cT_img {
@@ -113,4 +113,30 @@ header .title {
 }
 .cTMCBg_body{padding:0 1.6rem;}
 .cT_infoList{width:100%;padding-bottom: 0.96rem;border-bottom:1px solid #eee;}
+.cT_infoL{
+	float: left;
+	font-size: 0.88rem;
+	color: #aaa;
+	padding-top: 0.96rem;
+	width: 25%;
+}
+.cT_infoR {
+	float: left;
+	color: #333;
+	padding-top: 0.96rem;
+	width: 75%;
+	font-size: 1.04rem;
+}
+.cT_agreebox {
+	margin-top: 1.44rem;
+}
+.cT_agreebox_ag {
+	background-color: #589bff;
+	border-radius: 0.4rem;
+	display: block;
+	font-size: 1.2rem;
+	color: #fff;
+	width: 100%;
+	height: 2.88rem;
+}
 /*个人简介end*/

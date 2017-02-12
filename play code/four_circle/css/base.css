@@ -114,6 +114,9 @@ s, i, em {
 .col-red {
     color: #C81623 !important;
 }
+.color-66a4f9 {
+    color: #66a4f9;
+}
 .bg-col-skyblue {
     background-color: #8ebfef !important;
 }
@@ -143,4 +146,10 @@ s, i, em {
 }
 .dn {
     display: none;
+}
+.ptf {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
