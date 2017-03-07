@@ -19,11 +19,16 @@ function MAContent(className1,className2) {
 MAContent.prototype = {
 	constructor : MAContent,
 	MAC_position : function() {
-		var that = this;
-		var num = 0;
-		//  确定刚开始的 3个 div 和顶部颜色的位置
+		// 确定刚开始的 3个 div 和顶部颜色的位置
 		this.myAC.style.width = this.MAC_mains[0].offsetWidth+'px';
 		this.myAC.style.height = this.MAC_mains[0].offsetHeight+'px';
+		this.change();
+		this.MAC_Move();
+	},
+	change:function(){
+		var that = this;
+		// 计数器
+		var num = 0;
 		for(var i=0;i<this.MAC_mains.length;i++){
 			this.MAC_mains[i].style.transform = 'translateX('+this.MAC_mainsWidth*(i)+'px)';
 			// 存储索引值 
@@ -65,18 +70,16 @@ MAContent.prototype = {
 						that.MAC_mains[k].style.transform = 'translateX('+(that.MAC_mainsWidth*k+that.myAC.offsetWidth*(-num))+'px)';
 					}
 				}
+			that.MAC_change_position(this.index);
 			}
 		}
-		this.MAC_change_position();
 	},
-	MAC_change_position : function() {
+	MAC_change_position : function(index) {
 		var that = this;
-		var cs = null;
 		// 根据屏幕改变大小改变自身大小
 		window.onresize = function() {
 			for(var i = 0;i<that.MAC_mains.length;i++){
-				cs = that.MAC_mains[i].offsetWidth;
-				that.MAC_mains[i].style.transform = 'translateX('+cs*(i)+'px)';
+				that.MAC_mains[i].style.transition = 'none';
 				// 判断是哪个 div 在当前屏幕 
 				// 处理我恶心的布局BUG...固定宽高
 				if(that.MAC_mains[i].style.transform==='translateX(0px)'){
@@ -94,14 +97,49 @@ MAContent.prototype = {
 				}
 			}
 		}
-		// this.myAC.addEventListener('touchstart',function(e){
-		// 	console.log(e.target);
-		// });
-		// this.myAC.addEventListener('touchmove',function(e){
-		// 	console.log(e);
-		// });
-		// this.myAC.addEventListener('touchend',function(e){
-		// 	console.log(e.target);
-		// });
+	},
+	MAC_Move : function(){
+		var startX = 0; // 手指点击位置
+		var moveX = 0; // 手指滑动位置
+		var distanceX = 0; // 手指滑动距离
+		// var isMove = false; // 判断是否触发滑动事件
+		// var picMove; //  图片滑动距离 
+		var that = this;
+		var num = 0;
+		// 迷之手势
+		this.myAC.addEventListener('touchstart',function(e){
+			startX = e.touches[0].clientX;
+		});
+		this.myAC.addEventListener('touchmove',function(e){
+			moveX = e.touches[0].clientX;
+			distanceX = moveX - startX; // 手指滑动距离
+			// isMove = true;
+			//picMove = that.myAC.offsetWidth; // 图片移动距离
+		});
+		this.myAC.addEventListener('touchend',function(e){
+			// 迷之滑动
+			for(var j=0;j<that.MA_bottons.length;j++){
+					that.MA_bottons[j].className = '';
+			}
+			if(distanceX < 0){
+				num = num==that.MA_bottons.length-1?num-3:num;
+				num++;
+				that.MA_bottons[num].className = 'active';
+				for(var k=0;k<that.MAC_mains.length;k++){
+					that.MAC_mains[k].style.transition = 'none';
+					that.MAC_mains[k].style.transition = 'all 1s';
+					that.MAC_mains[k].style.transform = 'translateX('+(that.MAC_mainsWidth*k-that.myAC.offsetWidth*num)+'px)';
+				}
+			}else if(distanceX > 0){
+				num = num==0?num+3:num;
+				num--;
+				that.MA_bottons[num].className = 'active';
+				for(var k=0;k<that.MAC_mains.length;k++){
+					that.MAC_mains[k].style.transition = 'none';
+					that.MAC_mains[k].style.transition = 'all 1s';
+					that.MAC_mains[k].style.transform = 'translateX('+(that.MAC_mainsWidth*k+that.myAC.offsetWidth*(-num))+'px)';
+				}
+			}
+		});
 	}
 }
