@@ -84,7 +84,7 @@ header a {
 }
 .Ig_list {
 	border-bottom: 1px solid #e0e0e0;
-	height: 4.24rem;
+	height: 4.34rem;
 }
 .Ig_left {
 	float: left;
@@ -170,4 +170,15 @@ header a {
 	color: #fff;
 }
 /*我的回答头部结束*/
+/*内容开始*/
+.myAC {	
+	margin: 0 auto;
+	position: relative;
+	height: auto;
+	overflow: hidden;
+}
+.myAC .main {
+	position: absolute;
+}
+/*内容结束*/
 /*----------我的回答结束----------*/
