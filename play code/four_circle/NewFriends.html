@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="show_div" style="background-color: lightblue;width: 100%;height: 300px;"></div>
+<label id="show"></label>
+<script>
+var str = 'get-elements-by-id';
+function combo(str){
+	// split() 以分割形式形成新的数组
+	var arr = str.split('-'); // ["get","elements","by","id"]
+	console.log(arr);
+	for(var i=1;i<arr.length;i++){  
+		// 从 1 开始是因为 get 不用大写
+		arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substr(1,arr[i].length-1); // Element
+		// charAt()是返回某位置的字母；toUppercase() 是转大写；slice()、substring、substr()是截取字符串
+	}
+	// join() 合并成新的字符串
+	str = arr.join(""); // getElementsById
+	return str;
+}
+combo(str);
+</script>
+</body>
+</html>

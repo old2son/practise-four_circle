@@ -138,7 +138,6 @@ header a {
 }
 /*积分规则内容结束*/
 /*--------我的回答开始------*/
-/*我的回答头部开始*/
 .smallback {
 	width: 12% !important;
 }
@@ -169,8 +168,6 @@ header a {
 	background-color: #66a4f9;
 	color: #fff;
 }
-/*我的回答头部结束*/
-/*内容开始*/
 .myAC {	
 	margin: 0 auto;
 	position: relative;
@@ -180,5 +177,28 @@ header a {
 .myAC .main {
 	position: absolute;
 }
-/*内容结束*/
 /*----------我的回答结束----------*/
+/*------我的招聘开始---------*/
+.Trecruit {
+	width: 60%;
+}
+.Trecruit a  {
+	width: 50%;
+}
+.Trecruit a:nth-of-type(2){
+	border: none;
+}
+.follow{
+	position: absolute;
+	right: 0.4rem;
+	top: 0;
+}
+.ad_zanBtn {
+	width: 4.8rem;
+	height: 2.4rem;
+	color: #838383;
+	background-color: #fff;
+	box-shadow: 0 0.08rem 0.04rem rgba(51,51,51,0.5);
+	border-radius: 0.4rem;
+	vertical-align: middle;
+}
