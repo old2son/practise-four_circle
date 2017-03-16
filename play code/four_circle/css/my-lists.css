@@ -290,4 +290,54 @@ header .recruit_title {
 	color: #888;
 	width: 86.5%;
 }
+.rd_who {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0.96rem 0;
+}
+.rd_how {
+	float: left; 
+	font-size: 0.96rem;
+	margin: 0.5rem 0 0 1.5rem;
+}
+.rd_lookcard {
+	position: absolute;
+	width: 5.6rem;
+	height: 2.4rem;
+	font-size: 0.96rem;
+	text-align: center;
+	line-height: 2.4rem;
+	border-radius: 0.4rem;
+	right: 0;
+	top: 50%;
+	margin-top: -1.2rem;
+}
+.rd_lookcard a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.rd_lookcard label {
+	display: block;
+	color: #fff;
+}
+.underBtn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 3.92rem;
+	background-color: #f1f1f1;
+	box-shadow: 0 -0.16rem 0.24rem rgba(77,77,77,.2);
+}
+.underBtnIn {
+	height: 2.88rem;
+	width: 70%;
+	background-color: #fe434c;
+	margin: 0.52rem auto 0;
+	display: block;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 0.4rem;
+}
 /*----招聘备注结束-----*/
