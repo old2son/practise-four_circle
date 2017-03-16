@@ -200,5 +200,94 @@ header a {
 	background-color: #fff;
 	box-shadow: 0 0.08rem 0.04rem rgba(51,51,51,0.5);
 	border-radius: 0.4rem;
+	font-size: 1.2rem;
+	font-weight: bolder;
 	vertical-align: middle;
 }
+/*-----我的招聘结束------*/
+/*----招聘细节开始----*/
+header .recruit_title {
+	width: 60%;
+}
+.post_who_title {
+	margin-top: 0.4rem;
+}
+.main_post h2 {
+	font-size: 0.96rem;
+	color: #3e3e3e;
+}
+.main_post p {
+	margin-top: 0.4rem;
+	font-size: 0.96rem;
+	color: #888;
+	line-height: 1.5rem;
+	list-style-position: outside;
+}
+.post_who_list {
+	list-style: decimal; /*数字排列样式*/
+	width: 90%;
+	margin: 0 auto;
+}
+.post_who_list li {
+	font-size: 0.96rem;
+	color: #888;
+	line-height: 1.5rem;
+	list-style-position: inside; /*li样式位置*/
+}
+.post_who_other {
+	margin-top: 0.8rem;
+	font-size: 0.96rem;
+	color: #a0a7b9;
+}
+.post_who_other span {
+	margin-right: 0.8rem;
+}
+/*----招聘细节结束----*/
+/*----招聘备注开始-----*/
+.textBox {
+	width: 100%;
+	height: 8rem;
+	background-color: #fff;
+	margin-top: 0.85rem;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 1.2rem 0.64rem;
+}
+.textarea {
+	width: 100%;
+	height: 100%;
+	border: none;  /*去掉边框*/
+	outline: none;  /*去掉谷歌自带样式*/
+	font-size: 200%;  
+	resize: none;  /*不让客户自动伸缩*/
+}
+.textList {
+	margin-top: 0.96rem;
+	padding: 0 0.96rem;
+}
+.textBtn {
+	margin-top: 0.64rem;
+	width: 100%;
+	height: 3.2rem;
+	border-radius: 0.4rem;
+	color: #fff;
+	font-size: 1.28rem;
+}
+.remarksBox {
+	width: 100%;
+	border: 1px solid #5799fb;
+	background-color: #e8f1ff;
+	margin-top: 0.96rem;
+	border-radius: 0.4rem;
+	padding: 0.8rem 0.72rem;
+	font-size: 0.96rem;
+}
+.remarksLeft {
+	float: left;
+	width: 13.5%;
+}
+.remarks {
+	float: left;
+	color: #888;
+	width: 86.5%;
+}
+/*----招聘备注结束-----*/
