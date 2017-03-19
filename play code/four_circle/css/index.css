@@ -289,6 +289,14 @@
     font-size: 0.96rem;
     margin-top: 0.8rem;
 }
+.rd_shangjin {
+    font-size: 1.04rem;
+    color: #bbb;
+    margin-left: 0.8rem;
+}
+.rd_width {
+    width: 100% !important;
+}
 /*发帖页End*/
 /*链接Begin*/
 .postLink {
@@ -408,3 +416,19 @@ footer {
     letter-spacing: 0.2rem;
 }
 /*弹出关注提醒End*/
+/*---资源、活动、招聘、问答列表---*/
+.al_width {
+    width: 73% !important; 
+}
+.al_searchBtnBox {
+    float: left;
+    width: 15%;
+    height: 3.52rem;
+}
+.al_searchBtn {
+    display: block;
+    text-align: center;
+    line-height: 3.52rem;
+    font-size: 1.36rem;
+    color: #66a4f9;
+}

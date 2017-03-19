@@ -22,7 +22,12 @@ MAContent.prototype = {
 		// 确定刚开始的 3个 div 和顶部颜色的位置
 		this.myAC.style.width = this.MAC_mains[0].offsetWidth+'px';
 		this.myAC.style.height = this.MAC_mains[0].offsetHeight+'px';
+		// 确定div宽度
+		for(var i=0;i<this.MAC_mains.length;i++){
+			this.MAC_mains[i].style.width = this.myAC.style.width; 
+		}
 		this.change();
+		this.MAC_change_position();
 	},
 	change:function(){
 		var that = this;
@@ -52,7 +57,6 @@ MAContent.prototype = {
 						that.MAC_mains[k].style.transition = 'all .21s';
 						that.MAC_mains[k].style.transform = 'translateX('+(that.MAC_mainsWidth*k-that.myAC.offsetWidth*num)+'px)';
 					}
-					// that.MAC_Move(num);
 				}else if(num > this.index){
 					if(this.index==0){
 					// 判断从最后一个按钮点到第一个按钮
@@ -69,9 +73,7 @@ MAContent.prototype = {
 						that.MAC_mains[k].style.transition = 'all .21s';
 						that.MAC_mains[k].style.transform = 'translateX('+(that.MAC_mainsWidth*k+that.myAC.offsetWidth*(-num))+'px)';
 					}
-					// that.MAC_Move(num);
 				}
-			that.MAC_change_position();
 			}
 		}
 		var startX = 0; // 手指点击位置
@@ -140,19 +142,9 @@ MAContent.prototype = {
 		window.onresize = function() {
 			for(var i = 0;i<that.MAC_mains.length;i++){
 				that.MAC_mains[i].style.transition = 'none';
+				that.myAC.style.offsetWidth = window.innerWidth+'px';
 				// 判断是哪个 div 在当前屏幕 
-				// 处理我恶心的布局BUG...固定宽高
 				if(that.MAC_mains[i].style.transform==='translateX(0px)'){
-					if(window.innerWidth>='640'){
-						that.myAC.style.width = '640px';
-						// 570 - 625 这段BUG布局不知发生毛线事，暂时固定 578 处理 
-					}else if(window.innerWidth>'570'&&window.innerWidth<'630'){
-						that.myAC.style.width = '578px';	
-					}else if(window.innerWidth<='320'){
-						that.myAC.style.width = '320px';
-					}else {
-						that.myAC.style.width = window.innerWidth+'px';
-					}
 					that.myAC.style.height = that.MAC_mains[i].offsetHeight+'px';
 				}
 			}

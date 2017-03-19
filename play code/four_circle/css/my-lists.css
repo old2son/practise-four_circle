@@ -340,4 +340,325 @@ header .recruit_title {
 	font-size: 1.2rem;
 	border-radius: 0.4rem;
 }
+.pTop {
+	padding-top: 3.52rem;
+	padding-bottom: 1.2rem;
+}
+.pLR {
+	padding-left: 0.64rem;
+	padding-right: 0.64rem;
+}
+.pfBT {
+	bottom: 1.6rem !important;
+}
 /*----招聘备注结束-----*/
+/*----我的资源开始-----*/
+.post_who_hua {
+	padding: 0.4rem 0;
+}
+.beizhu {
+	margin-top: 3rem;
+	font-size: 0.96rem;
+}
+.beizhu > span {
+	color: #a9a7b9;
+}
+/*----我的资源结束-----*/
+/*----联系我们开始-----*/
+.ct_circle {
+	padding: 2.4rem 0;
+	text-align: center;
+}
+.ct_Qbox {
+	background: url('../img/icon.png')center no-repeat;
+	width: 6.33rem;
+	height: 5.6rem;
+	overflow: hidden;
+	border-radius: 0.8rem;
+	display: inline-block;
+	background-size: 6.25rem 5.52rem;
+}
+.ct_usName {
+	font-size: 1.2rem;
+}
+.ct_bg {
+	background-color: #fff;
+}
+.ct_list {
+	height: 3.52rem;
+	line-height: 3.52rem;
+	padding: 0 0.96rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+.ct_usNum {
+	height: 100%;
+	display: block;
+	padding-left: 2.5rem;
+	font-size: 1.12rem;
+	color: #3f3f3f;
+}
+.m_link {
+	background: url('../img/link.png')left no-repeat;
+	background-size: 1.32rem 1.28rem;
+}
+.email {
+	background: url('../img/email.png')left no-repeat;
+	background-size: 1.32rem 1.28rem;
+}
+/*----联系我们结束-----*/
+/*----圈子内部资料 start-----*/
+.Q_arrow {
+	width: 0.96rem;
+	height: 0.8rem;
+	display: inline-block;
+	background: url(../img/Top-arrow.png)center no-repeat;
+	background-size: 0.96rem 0.8rem;
+	vertical-align: middle;
+	margin: -0.1rem 0 0 0.4rem;
+}
+.Q_arrowOn {
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: all .5s;
+}
+.cp_eject {
+	position: fixed;
+	top: 3.52rem;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.meng {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #000;
+	-webkit-opacity: 0.5;
+	opacity: 0.5;
+}
+.PostSlide {
+	position: fixed;
+	top: 3.52rem;
+	left: 0;
+	z-index: 1001;
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	border-top: 1px solid #e1e1e1;
+	display: none;
+}
+.postslideList {
+	line-height: 3.52rem;
+	font-size: 1.2rem;
+	color: #888;
+	border-bottom: 1px solid #e1e1e1;
+}
+.post_list {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+/*----招聘详情 start----*/
+.eject {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.send-card {
+	height: 9.96rem;
+	width: 21.6rem;
+	background-color: #fff;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1001;
+	margin: -4.98rem 0 0 -10.8rem;
+	overflow: hidden;
+}
+.remark-information {
+	height: 6.4rem;
+	width: 100%;
+	padding-top: 1.44rem;
+}
+.remark-information .remark {
+	height: 3.52rem;
+	width: 94%;
+	line-height: 3.52rem;
+	background-color: #f0f4f7;
+	margin: 0 auto 0;
+	padding: 0 0.8rem;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+}
+.remark-information .remark .remark-text {
+	width: 100%;
+	height: auto;
+	background-color: #f0f4f7;
+	color: #555;
+	font-size: 0.96rem;
+}
+.EbtnBox {
+	height: 3.56rem;
+	width: 100%;
+	border-top: 1px solid #e1e1e1;
+}
+.rtd_sure {
+	border-right: 1px solid #e1e1e1;
+}
+.rtd_sure,.rtd_cancel{
+	float: left;
+	width: 50%;
+	background-color: #fff;
+	height: 3.56rem;
+	font-size: 1.12rem;
+	color: #888;
+	font-weight: bolder;
+}
+/*---活动详情 start-----*/
+.ad_timeSet {
+	float: right;
+	margin-top: 0.8rem;
+	font-size: 0.8rem;
+	color: #aaa;
+}
+.ad_answer {
+	padding: 0.52rem 0.64rem;
+}
+.join {
+	width: 70%;
+	height: 2.88rem;
+	margin: 0 auto;
+	display: block;
+	color: #fff;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+	font-size: 1.2rem;
+}
+.giveCard {
+	width: 21.6rem;
+	height: 21.96rem;
+	background-color: #fff;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	z-index: 1100;
+	margin-left: -10.8rem;
+	overflow: hidden;
+}
+.cardbg {
+	width: 100%;
+	height: 12.8rem;
+	text-align: center;
+	overflow: hidden;
+}
+.cardbg img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.rtd_tixing {
+	line-height: 5.6rem;
+	text-align: center;
+	font-size: 1.28rem;
+	color: #333;
+}
+/*--- 问答列表 start ---*/
+.Q_searchBox {
+	width: 63%;
+	height: 3.52rem;
+	float: left;
+	padding: 0.48rem 0;
+}
+.Q_search {
+	background-color: #f0f4f7;
+	height: 2.56rem;
+	line-height: 2.5556rem;
+	width: 100%;
+	-webkit-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+}
+.Q_searchBtn {
+	display: inline-block;
+	height: 100%;
+	width: 15%;
+	vertical-align: middle;
+	background: url('../img/search.png')center no-repeat;
+	-webkit-background-size: 1.48rem;
+	background-size: 1.48rem;
+}
+.Q_searchInput {
+	font-size: 200%;
+	width: 83%;
+	background-color: #f0f4f7;
+}
+.Q_ReadAll {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1100;
+	width: 25%;
+	height: 3.52rem;
+	line-height: 3.52rem;
+	text-align: center;
+	font-size: 1.36rem;
+}
+.Q_All {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.slideDown {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.Smeng {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 3.52rem;
+	left: 0;
+	z-index: 1001;
+	background-color: #000;
+	opacity: 0.5;
+}
+.Q_slideList {
+	width: 25%;
+	height: auto;
+	background-color: #fff;
+	position: fixed;
+	top: 3.52rem;
+	right: 0;
+	z-index: 1002;
+	border-bottom: 1px solid #e1e1e1;
+	display: none;
+}
+.Q_slideList li {
+	width: 100%;
+	height: 3.52rem;
+	line-height: 3.52rem;
+	border-bottom: 1px solid #e1e1e1;
+	text-align: center;
+	font-size: 1.04rem;
+	color: #888;
+}

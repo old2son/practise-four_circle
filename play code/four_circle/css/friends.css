@@ -89,3 +89,152 @@ div,a {
 	color: #888;
 }
 /*页面end*/
+/*---新朋友 start---*/
+.fd_left {
+	height: 5.2rem;
+	width: 18%;
+	float: left;
+	padding-left: 0.96rem;
+}
+.fd_right {
+	width: 82%;
+	height: 5.2rem;
+	border-bottom: 1px solid #dfdfdf;
+	display: inline-block;
+	float: right;
+	padding: 0.8rem 0 0.8rem 0.8rem;
+}
+.fd_name {
+	font-size: 1.28rem;
+	color: #3F3F3F;
+	display: inline-block;
+	vertical-align: middle;
+}
+.fd_right > div {
+	line-height: 1.7rem;
+}
+.nf_word {
+	font-size: 1.2rem;
+	color: #888;
+	margin-top: 0.2rem;
+}
+.nf_btnBox {
+	position: absolute;
+	right: 0.96rem;
+	top: 1.4rem;
+	width: 4.8rem;
+	height: 2.4rem;
+	overflow: hidden;
+}
+.nf_btn {
+	width: 4.8rem;
+	height: 2.4rem;
+	border-radius: 0.4rem;
+	background-color: #66a4f9;
+	color: #fff;
+	font-size: 1.04rem;
+}
+.ad_time {
+	font-size: 0.96rem;
+	color: #888;
+	margin-top: 0.8rem;
+	display: block;
+}
+.ad_num {
+	font-size: 0.96rem;
+	color: #a0a7b9;
+	display: inline-block;
+	margin-top: 0.8rem;
+}
+.ad_zanBtn {
+	float: right;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	line-height: 2.4rem;
+	width: 4.8rem;
+	height: 2.4rem;
+	color: #838383;
+	background-color: #fff;
+	box-shadow: 0 0.08rem 0.04rem rgba(51,51,51,0.5);
+	font-size: 1.2rem;
+	font-weight: bolder;
+	vertical-align: middle;
+}
+.zan {
+	/*灰色点赞图片*/
+	width: 100%;
+	height: 100%;
+	font-size: 0.88rem;
+	color: #838383;
+	padding-left: 30%;
+	background: #fff url(../img/xinH.png)20% center no-repeat;
+	background-size: 0.92rem;
+}
+.zanOn {
+	/*红色点赞*/
+	width: 100%;
+	height: 100%;
+	font-size: 0.88rem;
+	color: #fff;
+	padding-left: 30%;
+	background: #fe434c url(../img/xinR.png)20% center no-repeat;
+	background-size: 0.92rem;
+}
+.underBtn {
+	position: fixed;
+	bottom: fixed;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 3.92rem;
+	background-color: #f1f1f1;
+	box-shadow: 0 -0.16rem 0.24rem rgba(77,77,77,.2);
+}
+.ad_answer {
+	padding: 0.52rem 0.64rem;
+}
+.ad_answer > div{
+	float: left;
+	height: 2.88rem;
+	line-height: 2.88rem;
+	font-size: 1.04rem;
+}
+.ad_input {
+	width: 70%;
+	background-color: #fff;
+	height: 100%;
+	padding: 0 0.64rem;
+}
+.ad_input input {
+	width: 100%;
+	font-size:100%;
+}
+.ad_btnBox {
+	margin-left: 5%;
+	width: 25%;
+	text-align: center;
+}
+.ad_btnBox input {
+	font-size: 1.2rem;
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.4rem;
+}
+/*---新朋友 end---*/
+/*-- 招聘详情 start --*/
+.rtd_btnBox {
+	width: 50%;
+	text-align: center;
+}
+.rtd_yingpin,.rtd_tuijian {
+	width: 90%;
+	height: 100%;
+	color: #fff;
+	-webkit-border-radius: .4rem;
+	border-radius: .4rem;
+	font-size: 1.2rem;
+	vertical-align: inherit;
+}

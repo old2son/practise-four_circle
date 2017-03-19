@@ -2,29 +2,50 @@
 <html lang='en'>
 <meta charset="utf-8">
 <head>
-	<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
-	<title>我的活动</title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+	name="viewport">
+	<title>活动列表</title>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/circle.css">
+	<link rel="stylesheet" type="text/css" href="css/friends.css">
 	<link rel="stylesheet" type="text/css" href="css/my-lists.css">
 </head>
 <body>
-	<!-- 我的回答头部开始 -->
+	<!-- 头部 Begin -->
 	<header class="ptf">
-		<a class='back' href="javascript:history.go(-1)">
+		<a class='back smallback' href="javascript:history.go(-1)">
 			<span></span>
 		</a>
-		<div class='tabs Trecruit answer-tabs'>
-			<a class='active'>我发布的</a>
-			<a class=''>我回复的</a>
+		<div class="Q_searchBox al_width">
+			<div class="Q_search">
+				<label for="Q_searchInput" class="Q_searchBtn"></label>
+				<input type="text" id='Q_searchInput' placeholder="搜索问答" class="Q_searchInput">
+			</div>
+		</div>
+		<div class="al_searchBtnBox">
+			<input type="hidden" id='al_search'>
+			<label for='al_search' class="al_searchBtn">搜索</label>
 		</div>
 	</header>
-	<!-- 我的回答头部结束 -->
-	<!-- 内容开始 -->
-	<div class="myAC">
-		<div class="main">
-			<div class="main_post">
-				<a href="myActivity-detail.html">
+	<!-- 蒙层和隐藏菜单 -->
+	<!-- <div class="slideDown">
+		<div class="Smeng"></div>
+		<ul class="Q_slideList">
+			<li class="Q_list">
+				<input type="hidden">
+				<label for>查看全部回答</label>
+			</li>
+			<li class="Q_list">
+				<input type="hidden">
+				<label for>只看我的圈子</label>
+			</li>
+		</ul>
+	</div> -->
+	<!-- 发帖页Begin -->
+	<div class="main pTop pLR">
+		<div class="main_post">
+			<a href="javascript:void(0)">
 				<div class="post_who clearfix">
 					<div class="post_who_pic fl">
 						<img src="img/img.png">
@@ -48,7 +69,7 @@
 					</div>
 					<div class="post_who_list_content clearfix">
 						<span>活动地点：</span>
-						<span>广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东</span>
+						<span>番禺市桥</span>
 					</div>
 					<div class="post_who_list_content clearfix">
 						<span>活动规模：</span>
@@ -58,49 +79,11 @@
 						<p>已报名：30人</p>
 					</div>
 				</div>
-				</a>
-			</div>
-			<div class="main_post">
-				<a href="myActivity-detail.html">
-				<div class="post_who clearfix">
-					<div class="post_who_pic fl">
-						<img src="img/img.png">
-					</div>
-					<div class="post_who_name fl">
-						<p>曾晓敏</p>
-						<span class="post_who_name_time">1小时前</span>
-					</div>
-					<div class="post_who_grade">
-						<span class="post_who_grade_color fl">D</span>
-					</div>
-				</div>
-				<div class="post_who_list bs">
-					<div class="post_who_list_content clearfix">
-						<span>活动名称：</span>
-						<span>元旦社工义工活动</span>
-					</div>
-					<div class="post_who_list_content clearfix">
-						<span>活动时间：</span>
-						<span>2016-02-30</span>
-					</div>
-					<div class="post_who_list_content clearfix">
-						<span>活动地点：</span>
-						<span>广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东广州天河棠东</span>
-					</div>
-					<div class="post_who_list_content clearfix">
-						<span>活动规模：</span>
-						<span>30人</span>
-					</div>
-					<div class="post_who_list_yibao">
-						<p>已报名：30人</p>
-					</div>
-				</div>
-				</a>
-			</div>
+				<div class="post_pic bs pic4"></div>
+			</a>
 		</div>
-		<div class="main">
-			<div class="main_post">
-				<a href="myActivity-detail.html">
+		<div class="main_post">
+			<a href="javascript:void(0)">
 				<div class="post_who clearfix">
 					<div class="post_who_pic fl">
 						<img src="img/img.png">
@@ -124,7 +107,7 @@
 					</div>
 					<div class="post_who_list_content clearfix">
 						<span>活动地点：</span>
-						<span>广州</span>
+						<span>番禺市桥</span>
 					</div>
 					<div class="post_who_list_content clearfix">
 						<span>活动规模：</span>
@@ -134,13 +117,18 @@
 						<p>已报名：30人</p>
 					</div>
 				</div>
-				</a>
-			</div>
+				<div class="post_pic bs pic4"></div>
+			</a>
 		</div>
 	</div>
-	<!-- 内容结束 -->
+	<!-- 发帖页End -->
+	<!-- 链接Begin -->
+	<div class="postLink bs pfBT">
+		<a href="post.html">
+			<span></span>
+		</a>
+	</div>
 </body>
 <script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>
-<script type="text/javascript" src='js/swiper-3.4.1.min.js'></script>
-<script type="text/javascript" src='js/MyList.js'></script>
+<script type="text/javascript" src='js/select.js'></script>
 </html>

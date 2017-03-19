@@ -1,4 +1,3 @@
-// 底部按钮无刷新页面（学习中），底部按钮变色
 var bottomBox = new bottomBtnBox('bottomBtnBox');
 function bottomBtnBox(id){
 	// 获取元素
@@ -22,6 +21,3 @@ bottomBtnBox.prototype.dianji = function(){
 		}
 	}
 }
-// ajax刷新页面
-
-

@@ -126,3 +126,6 @@ div,a,h2 {
 	margin-top: 0.6rem	;
 }
 /*页面end*/
+.cp_eject .meng{
+	top: 3.52rem;  /*留出顶部栏的空位*/
+}
