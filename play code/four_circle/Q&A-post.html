@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<head>
+	<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+	<title>我的资源</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/my-lists.css">
+</head>
+<body>
+	<header class="ptf">
+		<a class='back' href="javascript:history.go(-1)">
+			<span></span>
+		</a>
+		<span class="title">发问答帖</span>
+		<a class="ptf_right">
+			<span class="Ig_r"></span>
+		</a>
+	</header>
+	<!-- 内容开始 -->
+	<div class="pTop">
+		<div class="textBox">
+			<textarea class="textarea" placeholder="请输入您的问题"></textarea>
+		</div>
+		<div class="pLR">
+			<div class="rd_detail">
+				<h2 class="postTitle">发布到：</h2>
+				<div class="cc_classify clearfix">
+					<div class="circles">
+						<input type="checkbox" class="checked">
+						<label class="checkZi">游泳圈</label>
+					</div>
+					<div class="circles">
+						<input type="checkbox" class="checked">
+						<label class="checkZi">朋友圈</label>
+					</div>
+					<div class="circles">
+						<input type="checkbox" class="checked">
+						<label class="checkZi">甜甜圈</label>
+					</div>
+					<div class="circles">
+						<input type="checkbox" class="checked">
+						<label class="checkZi">呼啦圈</label>
+					</div>
+				</div>
+				<div class="circlesT">
+					<input type="checkbox" class="checked" id='guangchang'>
+					<label for='guangchang' class="checkZi">
+						同时发布到广场
+					</label>
+				</div>
+			</div>
+			<div class="textList">
+				<input type="submit" value='提交' class="textBtn bg-col-skyblue" onclick="location.href='post-success.html'">
+			</div>
+		</div>
+	</div>
+	<!-- 内容结束 -->
+</body>
+<script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>
+</html>
